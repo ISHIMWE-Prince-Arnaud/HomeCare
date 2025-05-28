@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeCare Pro | Premium Home Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 flex items-center">
+                <i class="fas fa-home mr-2 text-blue-500"></i>
+                <span>HomeCare</span><span class="text-blue-400">Pro</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#services" class="nav-link hover:text-blue-600 transition">Services</a>
+                <a href="#booking" class="nav-link hover:text-blue-600 transition">Book Now</a>
+                <a href="#reviews" class="nav-link hover:text-blue-600 transition">Reviews</a>
+                <a href="#contact" class="nav-link hover:text-blue-600 transition">Contact</a>
+            </div>
+            <div class="hidden md:block">
+                <a href="#booking" class="btn-primary text-white py-2 px-6 rounded-full font-medium">Get Started</a>
+            </div>
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-white w-full py-3 px-6 shadow-md" id="mobile-menu">
+            <a href="#services" class="block py-3 hover:text-blue-600 transition border-b border-gray-100">Services</a>
+            <a href="#booking" class="block py-3 hover:text-blue-600 transition border-b border-gray-100">Book Now</a>
+            <a href="#reviews" class="block py-3 hover:text-blue-600 transition border-b border-gray-100">Reviews</a>
+            <a href="#contact" class="block py-3 hover:text-blue-600 transition">Contact</a>
+            <div class="mt-4">
+                <a href="#booking" class="btn-primary text-white py-2 px-6 rounded-full font-medium block text-center">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-24">
+        <div class="container mx-auto px-6 flex flex-col items-center text-center">
+            <div class="bg-white bg-opacity-20 rounded-full px-6 py-2 mb-6 inline-flex items-center">
+                <i class="fas fa-sparkle mr-2"></i>
+                <span>Trusted by 5,000+ homeowners</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Professional Home Services<br>On Your Schedule</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl opacity-90">We take care of your home so you can focus on what matters most. Book in seconds, enjoy for years.</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#services" class="bg-white text-blue-600 font-bold py-4 px-8 rounded-full hover:bg-blue-50 transition duration-300 transform hover:scale-105 shadow-lg">
+                    Explore Services
+                </a>
+                <a href="#booking" class="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white hover:bg-opacity-10 transition duration-300 transform hover:scale-105">
+                    Book Now
+                </a>
+            </div>
+            <div class="mt-12  flex flex-col lg:flex-row gap-5">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                    <span>100% Every Day Availability</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                    <span>Licensed professionals</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                    <span>100% Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-semibold">WHAT WE OFFER</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Our Premium Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">From routine maintenance to specialized tasks, we provide comprehensive home services tailored to your needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden relative">
+                    <div class="price-badge">Most Popular</div>
+                    <div class="p-8">
+                        <div class="service-icon mb-6">
+                            <i class="fas fa-broom text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Professional Cleaning</h3>
+                        <p class="text-gray-600 mb-6">Thorough cleaning of your entire home with eco-friendly products and attention to detail.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-blue-600 text-xl">$50/hr</span>
+                                <span class="text-gray-500 text-sm ml-2">starting price</span>
+                            </div>
+                            <button class="book-service-btn btn-primary text-white py-2 px-5 rounded-lg" data-service="cleaning">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <div class="service-icon mb-6">
+                            <i class="fas fa-utensils text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Personal Chef</h3>
+                        <p class="text-gray-600 mb-6">Custom meal preparation in your home with your dietary preferences and nutritional needs.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-blue-600 text-xl">$75/hr</span>
+                                <span class="text-gray-500 text-sm ml-2">starting price</span>
+                            </div>
+                            <button class="book-service-btn btn-primary text-white py-2 px-5 rounded-lg" data-service="cooking">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <div class="service-icon mb-6">
+                            <i class="fas fa-faucet text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Plumbing Services</h3>
+                        <p class="text-gray-600 mb-6">Repairs, installations, and maintenance by licensed professionals with 24/7 emergency service.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-blue-600 text-xl">$90/hr</span>
+                                <span class="text-gray-500 text-sm ml-2">starting price</span>
+                            </div>
+                            <button class="book-service-btn btn-primary text-white py-2 px-5 rounded-lg" data-service="plumbing">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <div class="service-icon mb-6">
+                            <i class="fas fa-tools text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Handyman Services</h3>
+                        <p class="text-gray-600 mb-6">Furniture assembly, hanging items, and general home repairs with precision and care.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-blue-600 text-xl">$65/hr</span>
+                                <span class="text-gray-500 text-sm ml-2">starting price</span>
+                            </div>
+                            <button class="book-service-btn btn-primary text-white py-2 px-5 rounded-lg" data-service="handyman">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <div class="service-icon mb-6">
+                            <i class="fas fa-tshirt text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Laundry Service</h3>
+                        <p class="text-gray-600 mb-6">Washing, drying, folding, and ironing of your clothes and linens with premium detergents.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-blue-600 text-xl">$40/load</span>
+                                <span class="text-gray-500 text-sm ml-2">starting price</span>
+                            </div>
+                            <button class="book-service-btn btn-primary text-white py-2 px-5 rounded-lg" data-service="laundry">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-8">
+                        <div class="service-icon mb-6">
+                            <i class="fas fa-leaf text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3">Gardening Services</h3>
+                        <p class="text-gray-600 mb-6">Lawn care, planting, pruning, and general garden maintenance to keep your outdoor space beautiful.</p>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="font-bold text-blue-600 text-xl">$55/hr</span>
+                                <span class="text-gray-500 text-sm ml-2">starting price</span>
+                            </div>
+                            <button class="book-service-btn btn-primary text-white py-2 px-5 rounded-lg" data-service="gardening">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <p class="text-gray-600 mb-6">Don't see what you're looking for?</p>
+                <a href="#contact" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition">
+                    Contact us for custom requests
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-semibold">OUR PROCESS</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">How It Works</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Getting your home services has never been easier with our simple 3-step process.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-blue-600 font-bold text-xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Book Your Service</h3>
+                    <p class="text-gray-600">Select from our range of services and schedule an appointment that works for you.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-blue-600 font-bold text-xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">We Arrive On Time</h3>
+                    <p class="text-gray-600">Our professional arrives at your doorstep fully equipped and ready to work.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-blue-600 font-bold text-xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Enjoy Your Home</h3>
+                    <p class="text-gray-600">Relax in your perfectly maintained home with our satisfaction guarantee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex-col">
+                    <div class="bg-blue-600 text-white p-8 md:p-12 text-center">
+                        <h2 class="text-2xl font-bold mb-4">Ready to Book?</h2>
+                        <p class="mb-6 opacity-90">Fill out this simple form and we'll get back to you within 30 minutes to confirm your appointment.</p>
+                        <div class="flex flex-col lg:flex-row gap-5">
+                            <div class="flex items-center justify-center">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                                <span>100% satisfaction guarantee</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                                <span>Licensed professionals</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-green-300"></i>
+                                <span>Flexible scheduling</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 md:p-12 mx-auto">
+                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Service Request Form</h2>
+                        <form id="booking-form">
+                            <div class="form-step active" id="step-1">
+                                <h3 class="text-lg font-semibold mb-6 text-blue-600 flex items-center">
+                                    <span class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">1</span>
+                                    Your Information
+                                </h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium mb-1">Full Name*</label>
+                                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 input-field focus:outline-none">
+                                        <div class="error-message text-red-500 text-sm mt-1" id="name-error">Please enter your name</div>
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium mb-1">Email*</label>
+                                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 input-field focus:outline-none">
+                                        <div class="error-message text-red-500 text-sm mt-1" id="email-error">Please enter a valid email</div>
+                                    </div>
+                                    <div>
+                                        <label for="phone" class="block text-sm font-medium mb-1">Phone*</label>
+                                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 input-field focus:outline-none">
+                                        <div class="error-message text-red-500 text-sm mt-1" id="phone-error">Please enter your phone number</div>
+                                    </div>
+                                    <div>
+                                        <label for="address" class="block text-sm font-medium mb-1">Address*</label>
+                                        <input type="text" id="address" name="address" required class="w-full px-4 py-3 input-field focus:outline-none">
+                                        <div class="error-message text-red-500 text-sm mt-1" id="address-error">Please enter your address</div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center mt-8">
+                                    <button type="button" class="next-step btn-primary text-white py-3 px-8 rounded-lg">Continue</button>
+                                </div>
+                            </div>
+                            <div class="form-step" id="step-2">
+                                <h3 class="text-lg font-semibold mb-6 text-blue-600 flex items-center">
+                                    <span class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">2</span>
+                                    Select Services
+                                </h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 w-full gap-4 mb-6" id="service-selection">
+                                    <div class="service-option p-4 border rounded-lg hover:border-blue-300 transition cursor-pointer" data-service="cleaning">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="cleaning-checkbox" name="services[]" value="cleaning" class="mr-4 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <div class="flex-1">
+                                                <label for="cleaning-checkbox" class="font-medium flex justify-between">
+                                                    <span>Professional Cleaning</span>
+                                                    <span class="text-blue-600">$50/hr</span>
+                                                </label>
+                                                <p class="text-sm text-gray-600 mt-1">Thorough cleaning of your entire home</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-option p-4 border rounded-lg hover:border-blue-300 transition cursor-pointer" data-service="cooking">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="cooking-checkbox" name="services[]" value="cooking" class="mr-4 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <div class="flex-1">
+                                                <label for="cooking-checkbox" class="font-medium flex justify-between">
+                                                    <span>Personal Chef</span>
+                                                    <span class="text-blue-600">$75/hr</span>
+                                                </label>
+                                                <p class="text-sm text-gray-600 mt-1">Custom meal preparation in your home</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-option p-4 border rounded-lg hover:border-blue-300 transition cursor-pointer" data-service="plumbing">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="plumbing-checkbox" name="services[]" value="plumbing" class="mr-4 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <div class="flex-1">
+                                                <label for="plumbing-checkbox" class="font-medium flex justify-between">
+                                                    <span>Plumbing</span>
+                                                    <span class="text-blue-600">$90/hr</span>
+                                                </label>
+                                                <p class="text-sm text-gray-600 mt-1">Repairs, installations, and maintenance</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-option p-4 border rounded-lg hover:border-blue-300 transition cursor-pointer" data-service="handyman">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="handyman-checkbox" name="services[]" value="handyman" class="mr-4 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <div class="flex-1">
+                                                <label for="handyman-checkbox" class="font-medium flex justify-between">
+                                                    <span>Handyman</span>
+                                                    <span class="text-blue-600">$65/hr</span>
+                                                </label>
+                                                <p class="text-sm text-gray-600 mt-1">Furniture assembly and general repairs</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-option p-4 border rounded-lg hover:border-blue-300 transition cursor-pointer" data-service="laundry">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="laundry-checkbox" name="services[]" value="laundry" class="mr-4 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <div class="flex-1">
+                                                <label for="laundry-checkbox" class="font-medium flex justify-between">
+                                                    <span>Laundry Service</span>
+                                                    <span class="text-blue-600">$40/load</span>
+                                                </label>
+                                                <p class="text-sm text-gray-600 mt-1">Washing, drying, folding, and ironing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-option p-4 border rounded-lg hover:border-blue-300 transition cursor-pointer" data-service="gardening">
+                                        <div class="flex items-center">
+                                            <input type="checkbox" id="gardening-checkbox" name="services[]" value="gardening" class="mr-4 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                                            <div class="flex-1">
+                                                <label for="gardening-checkbox" class="font-medium flex justify-between">
+                                                    <span>Gardening</span>
+                                                    <span class="text-blue-600">$55/hr</span>
+                                                </label>
+                                                <p class="text-sm text-gray-600 mt-1">Lawn care and garden maintenance</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="error-message text-red-500 text-sm mt-1 mb-4" id="services-error">Please select at least one service</div>
+                                <div id="service-details-container" class="space-y-4 mb-6"></div>
+                                <div class="flex justify-between mt-8">
+                                    <button type="button" class="prev-step btn-secondary text-gray-800 py-3 px-8 rounded-lg">Back</button>
+                                    <button type="button" class="next-step btn-primary text-white py-3 px-8 rounded-lg">Continue</button>
+                                </div>
+                            </div>
+                            <div class="form-step" id="step-3">
+                                <h3 class="text-lg font-semibold mb-6 text-blue-600 flex items-center">
+                                    <span class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">3</span>
+                                    Schedule Your Service
+                                </h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                    <div>
+                                        <label for="service-date" class="block text-sm font-medium mb-1">Date*</label>
+                                        <input type="date" id="service-date" name="service-date" min="" required class="w-full px-4 py-3 input-field focus:outline-none">
+                                        <div class="error-message text-red-500 text-sm mt-1" id="date-error">Please select a valid date</div>
+                                    </div>
+                                    <div>
+                                        <label for="service-time" class="block text-sm font-medium mb-1">Time*</label>
+                                        <select id="service-time" name="service-time" required class="w-full px-4 py-3 input-field focus:outline-none">
+                                            <option value="">Select a time</option>
+                                            <option value="08:00">8:00 AM</option>
+                                            <option value="09:00">9:00 AM</option>
+                                            <option value="10:00">10:00 AM</option>
+                                            <option value="11:00">11:00 AM</option>
+                                            <option value="12:00">12:00 PM</option>
+                                            <option value="13:00">1:00 PM</option>
+                                            <option value="14:00">2:00 PM</option>
+                                            <option value="15:00">3:00 PM</option>
+                                            <option value="16:00">4:00 PM</option>
+                                            <option value="17:00">5:00 PM</option>
+                                        </select>
+                                        <div class="error-message text-red-500 text-sm mt-1" id="time-error">Please select a time</div>
+                                    </div>
+                                </div>
+                                <div class="mb-6">
+                                    <label for="special-requests" class="block text-sm font-medium mb-1">Special Requests</label>
+                                    <textarea id="special-requests" name="special-requests" rows="3" class="w-full px-4 py-3 input-field focus:outline-none" placeholder="Any specific instructions or notes for our team..."></textarea>
+                                </div>
+                                <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                                    <h4 class="font-bold mb-4 text-lg">Price Summary</h4>
+                                    <div id="price-summary" class="price-summary">
+                                        <p class="text-gray-600">Select services to see pricing</p>
+                                    </div>
+                                    <div class="mt-4 pt-4 border-t border-blue-100">
+                                        <p class="font-bold text-lg">Estimated Total: <span id="total-price" class="text-blue-600">$0</span></p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between mt-8">
+                                    <button type="button" class="prev-step btn-secondary text-gray-800 py-3 px-8 rounded-lg">Back</button>
+                                    <button type="submit" class="btn-primary text-white py-3 px-8 rounded-lg">Complete Booking</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-semibold">TESTIMONIALS</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">What Our Customers Say</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it - hear from homeowners who've experienced our services.</p>
+            </div>
+            <div class="max-w-6xl mx-auto relative">
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" id="testimonial-slider">
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="testimonial-card p-8">
+                                <div class="flex mb-4">
+                                    <div class="text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-lg italic mb-6">"The cleaning service was exceptional! My home has never looked better. The team was professional, thorough, and left everything spotless. I'll definitely be using HomeCare Pro regularly."</p>
+                                <div class="flex items-center">
+                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                        <i class="fas fa-user text-blue-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Sarah Johnson</p>
+                                        <p class="text-sm text-gray-600">New York, NY</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="testimonial-card p-8">
+                                <div class="flex mb-4">
+                                    <div class="text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-lg italic mb-6">"The personal chef prepared an amazing meal for our anniversary. The food was delicious and presentation was beautiful. They even cleaned up everything afterwards - perfect service!"</p>
+                                <div class="flex items-center">
+                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                        <i class="fas fa-user text-blue-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Michael Thompson</p>
+                                        <p class="text-sm text-gray-600">Chicago, IL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide min-w-full px-4">
+                            <div class="testimonial-card p-8">
+                                <div class="flex mb-4">
+                                    <div class="text-yellow-400">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <p class="text-lg italic mb-6">"Quick response to our plumbing emergency at 10pm on a Sunday! The technician was knowledgeable, fixed the issue in no time, and explained what caused it to prevent future problems."</p>
+                                <div class="flex items-center">
+                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                                        <i class="fas fa-user text-blue-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-bold">Lisa Martinez</p>
+                                        <p class="text-sm text-gray-600">Los Angeles, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-12 space-x-4">
+                    <button id="prev-testimonial" class="w-12 h-12 rounded-full bg-white shadow-md text-blue-600 hover:bg-blue-50 transition flex items-center justify-center">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next-testimonial" class="w-12 h-12 rounded-full bg-white shadow-md text-blue-600 hover:bg-blue-50 transition flex items-center justify-center">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <a href="#booking" class="btn-primary text-white py-3 px-8 rounded-lg inline-block">Book Your Service Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-blue-500 font-semibold">HAVE QUESTIONS?</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our home services.</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <div class="border-b border-gray-200">
+                        <button class="faq-toggle w-full text-left p-6 hover:bg-gray-50 transition flex justify-between items-center">
+                            <span class="font-medium text-lg">How do I book a service?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">Booking is easy! Simply use our online booking form above, select your desired services, choose a date and time that works for you, and we'll confirm your appointment shortly. You can also call us directly at (555) 123-4567.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200">
+                        <button class="faq-toggle w-full text-left p-6 hover:bg-gray-50 transition flex justify-between items-center">
+                            <span class="font-medium text-lg">Are your professionals licensed and insured?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">Yes, all our service professionals are fully licensed, insured, and background-checked. We only work with the most qualified individuals who meet our high standards for quality and professionalism.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200">
+                        <button class="faq-toggle w-full text-left p-6 hover:bg-gray-50 transition flex justify-between items-center">
+                            <span class="font-medium text-lg">What is your cancellation policy?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">We understand plans change. You can cancel or reschedule your appointment up to 24 hours before your scheduled service at no charge. Cancellations within 24 hours may be subject to a fee of 50% of the service cost.</p>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-200">
+                        <button class="faq-toggle w-full text-left p-6 hover:bg-gray-50 transition flex justify-between items-center">
+                            <span class="font-medium text-lg">Do I need to provide any equipment or supplies?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">Our professionals come fully equipped with all necessary tools, equipment, and supplies. For cleaning services, we use eco-friendly products unless you request otherwise. For cooking services, you may need to provide specific ingredients if you have special requests.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="faq-toggle w-full text-left p-6 hover:bg-gray-50 transition flex justify-between items-center">
+                            <span class="font-medium text-lg">What if I'm not satisfied with the service?</span>
+                            <i class="fas fa-chevron-down text-blue-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content px-6 pb-6 hidden">
+                            <p class="text-gray-600">Your satisfaction is 100% guaranteed. If you're not completely happy with the service provided, contact us within 24 hours and we'll make it right - whether that means redoing the service at no cost or providing a full refund.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <p class="text-gray-600 mb-4">Still have questions?</p>
+                    <a href="#contact" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition">
+                        Contact our support team
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="bg-gray-900 text-white pt-20 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-home mr-2 text-blue-400"></i>
+                        <span>HomeCare</span><span class="text-blue-400">Pro</span>
+                    </h3>
+                    <p class="mb-6 text-gray-400">Providing premium home services with professionalism and care since 2010.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Professional Cleaning</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Personal Chef</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Plumbing Services</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Handyman Services</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Laundry Service</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Gardening Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-blue-400"></i>
+                            <span class="text-gray-400">123 Service St, Suite 100<br>New York, NY 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-4 text-blue-400"></i>
+                            <span class="text-gray-400">(555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-4 text-blue-400"></i>
+                            <span class="text-gray-400">info@homecarepro.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on special offers and home care tips.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-3 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-blue-600 text-white px-4 rounded-r-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">© 2023 HomeCare Pro. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden" id="confirmation-modal">
+        <div class="confirmation-modal bg-white rounded-xl p-8 max-w-md w-full mx-4">
+            <div class="text-center">
+                <div class="checkmark-circle">
+                    <i class="fas fa-check checkmark"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Booking Confirmed!</h3>
+                <p class="mb-6 text-gray-600">Thank you for choosing HomeCare Pro. We'll contact you shortly to confirm your appointment details.</p>
+                <button id="close-modal" class="btn-primary text-white py-3 px-8 rounded-lg">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
